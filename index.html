@@ -156,7 +156,10 @@
                       id="searchName"
                     />
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="btnTimNV"
+                      <span
+                        class="input-group-text"
+                        onclick="timTheoLoai()"
+                        id="btnTimNV"
                         ><i class="fa fa-search"></i
                       ></span>
                     </div>
@@ -372,7 +375,12 @@
             >
               Thêm người dùng
             </button>
-            <button id="btnCapNhat" type="button" class="btn btn-success">
+            <button
+              onclick="capNhatNV()"
+              id="btnCapNhat"
+              type="button"
+              class="btn btn-success"
+            >
               Cập nhật
             </button>
             <button

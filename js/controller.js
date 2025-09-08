@@ -30,7 +30,7 @@ xepLoai = function (gioLam) {
   } else if (gioLam >= 176) {
     loai = "Giỏi";
   } else if (gioLam >= 160) {
-    loại = "Khá";
+    loai = "Khá";
   } else {
     loai = "Trung bình";
   }
@@ -52,7 +52,10 @@ let renderDSNV = (arr) => {
         <td>${xepLoai(item.gioLam)}</td>
         <td><button onclick='xoaNhanVien("${
           item.tk
-        }")' type="button" class="btn btn-danger">Xóa</button></td>
+        }")' type="button" class="btn btn-danger">Delete</button>
+        <button type="button" onclick='editNhanVien("${
+          item.tk
+        }")' class="btn btn-warning">Edit</button></td>
         </tr>
         `;
   });
